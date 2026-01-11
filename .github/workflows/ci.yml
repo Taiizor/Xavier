@@ -5,6 +5,7 @@ on:
         branches: [develop]
     pull_request:
         branches: [develop]
+    workflow_dispatch:
 
 env:
     DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
