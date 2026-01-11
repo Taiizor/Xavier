@@ -22,7 +22,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                   fetch-depth: 0
 
@@ -52,7 +52,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
               with:
                   fetch-depth: 0
 
@@ -68,13 +68,13 @@ jobs:
               run: dotnet pack src/Xavier/Xavier.csproj -c Release -o ./artifacts
 
             - name: Upload artifacts
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v6
               with:
                   name: nupkg
                   path: ./artifacts/*.nupkg
 
             - name: Upload symbol artifacts
-              uses: actions/upload-artifact@v4
+              uses: actions/upload-artifact@v6
               with:
                   name: snupkg
                   path: ./artifacts/*.snupkg
@@ -85,7 +85,7 @@ jobs:
 
         steps:
             - name: Checkout
-              uses: actions/checkout@v4
+              uses: actions/checkout@v6
 
             - name: Setup .NET
               uses: actions/setup-dotnet@v5
