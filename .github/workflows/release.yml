@@ -68,3 +68,35 @@ jobs:
                       ./artifacts/*.nupkg
                       ./artifacts/*.snupkg
                   generate_release_notes: true
+                  body: |
+                      ## Xavier v${{ steps.version.outputs.version }}
+
+                      **Opinionated but customizable API defaults pack for ASP.NET Core.**
+
+                      Xavier bundles common cross-cutting concerns into a simple, one-liner setup — no boilerplate required.
+
+                      ### Installation
+
+                      ```bash
+                      dotnet add package Xavier --version ${{ steps.version.outputs.version }}
+                      ```
+
+                      ### Features
+
+                      - ✅ **ProblemDetails** - RFC 7807 error responses with trace/correlation IDs
+                      - ✅ **Correlation ID** - Request tracking with `X-Correlation-Id` header
+                      - ✅ **Health Endpoints** - `/health` (liveness) and `/ready` (readiness)
+                      - ✅ **OpenAPI** - Document exposure at `/openapi/v1.json` (net8+)
+                      - ✅ **HTTP Logging** - Safe-by-default request/response logging
+                      - ✅ **Rate Limiting** - Global, Per-IP, Per-Client policies (net7+)
+                      - ✅ **Resilience** - HttpClient retry/timeout/circuit-breaker (net8+)
+                      - ✅ **Observability** - OpenTelemetry wiring (no forced exporters)
+
+                      ### Supported Frameworks
+
+                      `net6.0` | `net7.0` | `net8.0` | `net9.0` | `net10.0`
+
+                      ### Links
+
+                      - 📦 [NuGet Package](https://www.nuget.org/packages/Xavier/${{ steps.version.outputs.version }})
+                      - 📖 [Documentation](https://github.com/Taiizor/Xavier#readme)
