@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFrameworks>net10.0</TargetFrameworks>
+        <RootNamespace>Xavier.Sample.Swagger</RootNamespace>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Xavier\Xavier.csproj" />
+    </ItemGroup>
+
+    <!-- Swashbuckle for Swagger UI - requires Microsoft.OpenApi 2.x (NOT 3.x) -->
+    <!-- Central package management uses OpenApi 3.x, so we override here -->
+    <ItemGroup>
+        <PackageReference Include="Swashbuckle.AspNetCore" />
+        <!-- NOTE: Swashbuckle 10.x requires OpenApi 2.x (NOT 3.x). OpenApi 3.x has breaking changes. -->
+        <PackageReference Include="Microsoft.OpenApi" Version="2.3.0" VersionOverride="2.3.0" />
+    </ItemGroup>
+
+</Project>

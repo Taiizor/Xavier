@@ -1,0 +1,28 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Xavier.Sample.ControllersApi/Xavier.Sample.ControllersApi.csproj" />
+    <Project Path="samples/Xavier.Sample.HealthChecks/Xavier.Sample.HealthChecks.csproj" />
+    <Project Path="samples/Xavier.Sample.HttpLogging/Xavier.Sample.HttpLogging.csproj" />
+    <Project Path="samples/Xavier.Sample.MinimalApi/Xavier.Sample.MinimalApi.csproj" />
+    <Project Path="samples/Xavier.Sample.Observability/Xavier.Sample.Observability.csproj" />
+    <Project Path="samples/Xavier.Sample.OpenApi/Xavier.Sample.OpenApi.csproj" />
+    <Project Path="samples/Xavier.Sample.RateLimiting/Xavier.Sample.RateLimiting.csproj" />
+    <Project Path="samples/Xavier.Sample.Resilience/Xavier.Sample.Resilience.csproj" />
+    <Project Path="samples/Xavier.Sample.Scalar/Xavier.Sample.Scalar.csproj" />
+    <Project Path="samples/Xavier.Sample.Swagger/Xavier.Sample.Swagger.csproj" />
+  </Folder>
+  <Folder Name="/Solution Items/">
+    <File Path=".editorconfig" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="global.json" />
+    <File Path="NuGet.Config" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Xavier/Xavier.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Xavier.IntegrationTests/Xavier.IntegrationTests.csproj" />
+    <Project Path="tests/Xavier.Tests/Xavier.Tests.csproj" />
+  </Folder>
+</Solution>

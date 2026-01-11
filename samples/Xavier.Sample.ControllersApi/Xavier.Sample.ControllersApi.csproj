@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFrameworks>net10.0</TargetFrameworks>
+        <RootNamespace>Xavier.Sample.ControllersApi</RootNamespace>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\src\Xavier\Xavier.csproj" />
+    </ItemGroup>
+
+</Project>

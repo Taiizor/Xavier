@@ -1,0 +1,13 @@
+{
+    "profiles": {
+        "Xavier.Sample.OpenApi": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "openapi/v1.json",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "applicationUrl": "http://localhost:5050"
+        }
+    }
+}
