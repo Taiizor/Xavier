@@ -85,6 +85,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+            - name: Configure Git for CRLF
+              run: |
+                  git config --global core.autocrlf true
+
             - name: Checkout
               uses: actions/checkout@v6
 
