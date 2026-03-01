@@ -69,13 +69,13 @@ jobs:
               run: dotnet pack src/Xavier/Xavier.csproj -c Release -o ./artifacts
 
             - name: Upload artifacts
-              uses: actions/upload-artifact@v6
+              uses: actions/upload-artifact@v7
               with:
                   name: nupkg
                   path: ./artifacts/*.nupkg
 
             - name: Upload symbol artifacts
-              uses: actions/upload-artifact@v6
+              uses: actions/upload-artifact@v7
               with:
                   name: snupkg
                   path: ./artifacts/*.snupkg
