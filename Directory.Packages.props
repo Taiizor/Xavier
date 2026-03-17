@@ -13,7 +13,7 @@
     <PackageVersion Include="Microsoft.Extensions.Options" Version="9.0.0" />
     <PackageVersion Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="10.0.1" />
     <!-- OpenAPI -->
-    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.1" />
+    <PackageVersion Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
     <PackageVersion Include="Microsoft.OpenApi" Version="3.1.2" />
     <PackageVersion Include="Scalar.AspNetCore" Version="2.12.4" />
     <!-- Swashbuckle (requires Microsoft.OpenApi 2.x - used only by Xavier.Sample.Swagger) -->
